@@ -6,7 +6,7 @@
 /*   By: vgallois <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/19 09:00:04 by vgallois          #+#    #+#             */
-/*   Updated: 2019/12/12 18:28:33 by vgallois         ###   ########.fr       */
+/*   Updated: 2020/02/12 01:26:23 by vgallois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void		ft_printf_parse_width(char **s, t_pf *pf, va_list *arg)
 			{
 				pf->width *= -1;
 				pf->right_pad = 1;
+				pf->zeropad = 0;
 			}
 		}
 		else
